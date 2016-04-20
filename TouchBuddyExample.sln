@@ -13,28 +13,36 @@ Global
 		TouchBuddyExample.SharedProject\TouchBuddyExample.SharedProject.projitems*{9a5a7063-cd7e-40d4-bb31-1f3dae4384a2}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
 		Ad-Hoc|iPhone = Ad-Hoc|iPhone
 		Ad-Hoc|iPhoneSimulator = Ad-Hoc|iPhoneSimulator
+		AppStore|Any CPU = AppStore|Any CPU
 		AppStore|iPhone = AppStore|iPhone
 		AppStore|iPhoneSimulator = AppStore|iPhoneSimulator
+		Debug|Any CPU = Debug|Any CPU
 		Debug|iPhone = Debug|iPhone
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|Any CPU = Release|Any CPU
 		Release|iPhone = Release|iPhone
 		Release|iPhoneSimulator = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B59B736D-402A-4023-B504-1B935C0992F9}.Ad-Hoc|Any CPU.ActiveCfg = Ad-Hoc|iPhoneSimulator
 		{B59B736D-402A-4023-B504-1B935C0992F9}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
 		{B59B736D-402A-4023-B504-1B935C0992F9}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
 		{B59B736D-402A-4023-B504-1B935C0992F9}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhoneSimulator
 		{B59B736D-402A-4023-B504-1B935C0992F9}.Ad-Hoc|iPhoneSimulator.Build.0 = Ad-Hoc|iPhoneSimulator
+		{B59B736D-402A-4023-B504-1B935C0992F9}.AppStore|Any CPU.ActiveCfg = AppStore|iPhoneSimulator
 		{B59B736D-402A-4023-B504-1B935C0992F9}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
 		{B59B736D-402A-4023-B504-1B935C0992F9}.AppStore|iPhone.Build.0 = AppStore|iPhone
 		{B59B736D-402A-4023-B504-1B935C0992F9}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
 		{B59B736D-402A-4023-B504-1B935C0992F9}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
+		{B59B736D-402A-4023-B504-1B935C0992F9}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
 		{B59B736D-402A-4023-B504-1B935C0992F9}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{B59B736D-402A-4023-B504-1B935C0992F9}.Debug|iPhone.Build.0 = Debug|iPhone
 		{B59B736D-402A-4023-B504-1B935C0992F9}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
 		{B59B736D-402A-4023-B504-1B935C0992F9}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{B59B736D-402A-4023-B504-1B935C0992F9}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
 		{B59B736D-402A-4023-B504-1B935C0992F9}.Release|iPhone.ActiveCfg = Release|iPhone
 		{B59B736D-402A-4023-B504-1B935C0992F9}.Release|iPhone.Build.0 = Release|iPhone
 		{B59B736D-402A-4023-B504-1B935C0992F9}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator

@@ -163,15 +163,17 @@ namespace TouchBuddyExample
 				Prim.Circle(mouseEvent.Position, 10, Color.Yellow);
 			}
 
+			//draw the mouse delta in lime green
 			foreach (var mouseEvent in Drags)
 			{
 				Prim.Line(mouseEvent.Current, mouseEvent.Current - mouseEvent.Delta, Color.LimeGreen);
 			}
 
+			//draw the drag operatino in green
 			if (null != Drag)
 			{
-				Prim.Circle(Drag.Current, 10, Color.LimeGreen);
-				Prim.Line(Drag.Start, Drag.Current, Color.LimeGreen);
+				//Prim.Circle(Drag.Current, 10, Color.Green);
+				Prim.Line(Drag.Start, Drag.Current, Color.Green);
 			}
 
 			foreach (var mouseEvent in Clicks)
@@ -179,10 +181,11 @@ namespace TouchBuddyExample
 				Prim.Circle(mouseEvent.Position, 10, (mouseEvent.Button == MouseButton.Left) ? Color.Red : Color.DarkRed);
 			}
 
+			//draw the drop in dark green
 			foreach (var mouseEvent in Drops)
 			{
-				Prim.Line(mouseEvent.Start, mouseEvent.Drop, Color.Green);
-				Prim.Circle(mouseEvent.Drop, 10, Color.Green);
+				Prim.Line(mouseEvent.Start, mouseEvent.Drop, Color.DarkGreen);
+				Prim.Circle(mouseEvent.Drop, 10, Color.DarkGreen);
 			}
 
 			spriteBatch.End();
