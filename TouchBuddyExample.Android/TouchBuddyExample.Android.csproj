@@ -47,7 +47,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="InputHelper.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\InputHelper.Android.1.0.2\lib\InputHelper.Android.dll</HintPath>
+      <HintPath>..\packages\InputHelper.1.0.0\lib\MonoAndroid10\InputHelper.Android.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Mono.Android" />
@@ -58,7 +58,7 @@
     <Reference Include="mscorlib" />
     <Reference Include="OpenTK-1.0" />
     <Reference Include="PrimitiveBuddy.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\PrimitiveBuddy.Android.1.0.3\lib\PrimitiveBuddy.Android.dll</HintPath>
+      <HintPath>..\packages\PrimitiveBuddy.1.0.0\lib\MonoAndroid10\PrimitiveBuddy.Android.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -66,7 +66,7 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="TouchScreenBuddy.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\TouchScreenBuddy.Android.1.0.8\lib\TouchScreenBuddy.Android.dll</HintPath>
+      <HintPath>..\packages\TouchScreenBuddy.1.0.0\lib\MonoAndroid10\TouchScreenBuddy.Android.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
