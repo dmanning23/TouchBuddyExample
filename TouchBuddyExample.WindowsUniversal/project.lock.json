@@ -3,14 +3,12 @@
   "version": 2,
   "targets": {
     "UAP,Version=v10.0": {
-      "InputHelper/1.0.0": {
+      "InputHelper/1.0.11": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
-          "SharpDX": "[3.0.0]",
-          "SharpDX.Direct2D1": "[3.0.0]",
-          "SharpDX.Direct3D11": "[3.0.0]"
+          "PrimitiveBuddy": "1.0.0"
         },
         "compile": {
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
@@ -1966,12 +1964,13 @@
           }
         }
       },
-      "TouchScreenBuddy/1.0.0": {
+      "TouchScreenBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "InputHelper": "1.0.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0",
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]"
@@ -1985,14 +1984,12 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
-      "InputHelper/1.0.0": {
+      "InputHelper/1.0.11": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
-          "SharpDX": "[3.0.0]",
-          "SharpDX.Direct2D1": "[3.0.0]",
-          "SharpDX.Direct3D11": "[3.0.0]"
+          "PrimitiveBuddy": "1.0.0"
         },
         "compile": {
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
@@ -3814,12 +3811,13 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "TouchScreenBuddy/1.0.0": {
+      "TouchScreenBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "InputHelper": "1.0.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0",
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]"
@@ -3833,14 +3831,12 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
-      "InputHelper/1.0.0": {
+      "InputHelper/1.0.11": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
-          "SharpDX": "[3.0.0]",
-          "SharpDX.Direct2D1": "[3.0.0]",
-          "SharpDX.Direct3D11": "[3.0.0]"
+          "PrimitiveBuddy": "1.0.0"
         },
         "compile": {
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
@@ -5619,12 +5615,13 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "TouchScreenBuddy/1.0.0": {
+      "TouchScreenBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "InputHelper": "1.0.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0",
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]"
@@ -5638,14 +5635,12 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
-      "InputHelper/1.0.0": {
+      "InputHelper/1.0.11": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
-          "SharpDX": "[3.0.0]",
-          "SharpDX.Direct2D1": "[3.0.0]",
-          "SharpDX.Direct3D11": "[3.0.0]"
+          "PrimitiveBuddy": "1.0.0"
         },
         "compile": {
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
@@ -7476,12 +7471,13 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "TouchScreenBuddy/1.0.0": {
+      "TouchScreenBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "InputHelper": "1.0.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0",
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]"
@@ -7495,14 +7491,12 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
-      "InputHelper/1.0.0": {
+      "InputHelper/1.0.11": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
-          "SharpDX": "[3.0.0]",
-          "SharpDX.Direct2D1": "[3.0.0]",
-          "SharpDX.Direct3D11": "[3.0.0]"
+          "PrimitiveBuddy": "1.0.0"
         },
         "compile": {
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
@@ -9281,12 +9275,13 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "TouchScreenBuddy/1.0.0": {
+      "TouchScreenBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "InputHelper": "1.0.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0",
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]"
@@ -9300,14 +9295,12 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
-      "InputHelper/1.0.0": {
+      "InputHelper/1.0.11": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
-          "SharpDX": "[3.0.0]",
-          "SharpDX.Direct2D1": "[3.0.0]",
-          "SharpDX.Direct3D11": "[3.0.0]"
+          "PrimitiveBuddy": "1.0.0"
         },
         "compile": {
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
@@ -11138,12 +11131,13 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "TouchScreenBuddy/1.0.0": {
+      "TouchScreenBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "InputHelper": "1.0.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0",
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]"
@@ -11157,14 +11151,12 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
-      "InputHelper/1.0.0": {
+      "InputHelper/1.0.11": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
-          "SharpDX": "[3.0.0]",
-          "SharpDX.Direct2D1": "[3.0.0]",
-          "SharpDX.Direct3D11": "[3.0.0]"
+          "PrimitiveBuddy": "1.0.0"
         },
         "compile": {
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
@@ -12943,12 +12935,13 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "TouchScreenBuddy/1.0.0": {
+      "TouchScreenBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "InputHelper": "1.0.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0",
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]"
@@ -12963,11 +12956,11 @@
     }
   },
   "libraries": {
-    "InputHelper/1.0.0": {
-      "sha512": "pLbj2Wu3go3AgcyCDQx6ms5V/hmi796gdeFrkUnJuugEt2Z3L9yzVvyE7ipTeiKvX7me6I0UaQ+cFkSpt2Sgvg==",
+    "InputHelper/1.0.11": {
+      "sha512": "4ZAsiFPI1K5MnTFHvsA9h0u9YpW4sXmg8FY7aGWrichChoE79wL0449m6xIu2QmWXPj3qV9yoF7kGgMAOkHkZw==",
       "type": "package",
       "files": [
-        "InputHelper.1.0.0.nupkg.sha512",
+        "InputHelper.1.0.11.nupkg.sha512",
         "InputHelper.nuspec",
         "lib/MonoAndroid10/InputHelper.Android.dll",
         "lib/MonoAndroid10/InputHelper.Android.pdb",
@@ -16329,11 +16322,11 @@
         "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
     },
-    "TouchScreenBuddy/1.0.0": {
-      "sha512": "i6gDcAgF9J9+RfX3/kR+htQ8gPvwFnwvsNMAdJ/NLJuvbeLC/QmX6HhHnWGmgd9b6lMzZ5MSkwV4lU7PtVhdBQ==",
+    "TouchScreenBuddy/1.0.3": {
+      "sha512": "je4zcFQVr9c48bwuJRI3CSIA9v3fBPkNF6nYUffJ9qxxwW8NvOCROWZxb0gL02+ONrA3ZbPfcABNPZ5brfCrLQ==",
       "type": "package",
       "files": [
-        "TouchScreenBuddy.1.0.0.nupkg.sha512",
+        "TouchScreenBuddy.1.0.3.nupkg.sha512",
         "TouchScreenBuddy.nuspec",
         "lib/MonoAndroid10/TouchScreenBuddy.Android.dll",
         "lib/MonoAndroid10/TouchScreenBuddy.Android.pdb",
@@ -16348,10 +16341,11 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "InputHelper >= 1.0.11",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
       "MonoGame.Framework.WindowsUniversal >= 3.5.1.1679",
       "PrimitiveBuddy >= 1.0.0",
-      "TouchScreenBuddy >= 1.0.0"
+      "TouchScreenBuddy >= 1.0.3"
     ],
     "UAP,Version=v10.0": []
   }
