@@ -26,6 +26,10 @@ namespace TouchBuddyExample.Android
 		
 		public static void UpdateIdValues()
 		{
+			global::FontBuddyLib.Android.Resource.String.ApplicationName = global::TouchBuddyExample.Android.Resource.String.ApplicationName;
+			global::FontBuddyLib.Android.Resource.String.Hello = global::TouchBuddyExample.Android.Resource.String.Hello;
+			global::GameTimer.Android.Resource.String.ApplicationName = global::TouchBuddyExample.Android.Resource.String.ApplicationName;
+			global::GameTimer.Android.Resource.String.Hello = global::TouchBuddyExample.Android.Resource.String.Hello;
 			global::InputHelper.Android.Resource.String.ApplicationName = global::TouchBuddyExample.Android.Resource.String.ApplicationName;
 			global::InputHelper.Android.Resource.String.Hello = global::TouchBuddyExample.Android.Resource.String.Hello;
 			global::PrimitiveBuddy.Android.Resource.String.ApplicationName = global::TouchBuddyExample.Android.Resource.String.ApplicationName;

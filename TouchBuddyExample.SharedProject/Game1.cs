@@ -6,6 +6,8 @@ using PrimitiveBuddy;
 using System.Collections.Generic;
 using InputHelper;
 using System.Linq;
+using FontBuddyLib;
+using GameTimer;
 
 namespace TouchBuddyExample
 {
@@ -16,7 +18,12 @@ namespace TouchBuddyExample
 	{
 		#region Properties
 
-		GraphicsDeviceManager graphics;
+		GraphicsDeviceManager _graphics;
+		SpriteBatch _spriteBatch;
+
+		IFontBuddy _font;
+		IInputHelper _input;
+		GameClock _time;
 
 		#endregion //Properties
 
@@ -24,7 +31,7 @@ namespace TouchBuddyExample
 
 		public Game1()
 		{
-			graphics = new GraphicsDeviceManager(this);
+			_graphics = new GraphicsDeviceManager(this);
 			Content.RootDirectory = "Content";
 		}
 
@@ -36,11 +43,24 @@ namespace TouchBuddyExample
 		/// </summary>
 		protected override void Initialize()
 		{
-			var input = new TouchComponent(this);
+			_input = new TouchComponent(this, null);
 
-			var debug = new InputHelper.DebugInputComponent(this);
+			var debug = new InputHelper.DebugInputComponent(this, null);
 
 			base.Initialize();
+		}
+
+		protected override void LoadContent()
+		{
+			base.LoadContent();
+
+			_spriteBatch = new SpriteBatch(_graphics.GraphicsDevice);
+
+			_font = new FontBuddy();
+			_font.LoadContent(Content, "ArialBlack24");
+
+			_time = new GameClock();
+			_time.Start();
 		}
 
 		/// <summary>
@@ -55,6 +75,8 @@ namespace TouchBuddyExample
 				//Exit();
 			}
 
+			_time.Update(gameTime);
+
 			base.Update(gameTime);
 		}
 
@@ -65,6 +87,24 @@ namespace TouchBuddyExample
 		protected override void Draw(GameTime gameTime)
 		{
 			GraphicsDevice.Clear(Color.CornflowerBlue);
+
+			_spriteBatch.Begin();
+
+			//write the stuff
+			var pos = Vector2.Zero;
+			_font.Write(string.Format("Highlights: {0}", _input.Highlights.Count), pos, Justify.Left, 1f, Color.White, _spriteBatch, _time);
+			pos.Y += _font.Font.LineSpacing;
+
+			_font.Write(string.Format("Clicks: {0}", _input.Clicks.Count), pos, Justify.Left, 1f, Color.White, _spriteBatch, _time);
+			pos.Y += _font.Font.LineSpacing;
+
+			_font.Write(string.Format("Drags: {0}", _input.Drags.Count), pos, Justify.Left, 1f, Color.White, _spriteBatch, _time);
+			pos.Y += _font.Font.LineSpacing;
+
+			_font.Write(string.Format("Drops: {0}", _input.Drops.Count), pos, Justify.Left, 1f, Color.White, _spriteBatch, _time);
+			pos.Y += _font.Font.LineSpacing;
+
+			_spriteBatch.End();
 
 			base.Draw(gameTime);
 		}
