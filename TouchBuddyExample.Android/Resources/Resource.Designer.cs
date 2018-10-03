@@ -32,10 +32,16 @@ namespace TouchBuddyExample.Android
 			global::GameTimer.Android.Resource.String.Hello = global::TouchBuddyExample.Android.Resource.String.Hello;
 			global::InputHelper.Android.Resource.String.ApplicationName = global::TouchBuddyExample.Android.Resource.String.ApplicationName;
 			global::InputHelper.Android.Resource.String.Hello = global::TouchBuddyExample.Android.Resource.String.Hello;
+			global::MatrixExtensions.Android.Resource.String.ApplicationName = global::TouchBuddyExample.Android.Resource.String.ApplicationName;
+			global::MatrixExtensions.Android.Resource.String.Hello = global::TouchBuddyExample.Android.Resource.String.Hello;
 			global::PrimitiveBuddy.Android.Resource.String.ApplicationName = global::TouchBuddyExample.Android.Resource.String.ApplicationName;
 			global::PrimitiveBuddy.Android.Resource.String.Hello = global::TouchBuddyExample.Android.Resource.String.Hello;
+			global::RandomExtensions.Android.Resource.String.ApplicationName = global::TouchBuddyExample.Android.Resource.String.ApplicationName;
+			global::RandomExtensions.Android.Resource.String.Hello = global::TouchBuddyExample.Android.Resource.String.Hello;
 			global::TouchScreenBuddy.Android.Resource.String.ApplicationName = global::TouchBuddyExample.Android.Resource.String.ApplicationName;
 			global::TouchScreenBuddy.Android.Resource.String.Hello = global::TouchBuddyExample.Android.Resource.String.Hello;
+			global::Vector2Extensions.Android.Resource.String.ApplicationName = global::TouchBuddyExample.Android.Resource.String.ApplicationName;
+			global::Vector2Extensions.Android.Resource.String.Hello = global::TouchBuddyExample.Android.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
