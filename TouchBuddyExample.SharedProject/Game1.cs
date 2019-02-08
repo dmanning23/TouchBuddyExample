@@ -1,13 +1,10 @@
-﻿using Microsoft.Xna.Framework;
+﻿using FontBuddyLib;
+using GameTimer;
+using InputHelper;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using TouchScreenBuddy;
-using PrimitiveBuddy;
-using System.Collections.Generic;
-using InputHelper;
-using System.Linq;
-using FontBuddyLib;
-using GameTimer;
 
 namespace TouchBuddyExample
 {

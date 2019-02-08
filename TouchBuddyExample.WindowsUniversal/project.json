@@ -1,12 +1,12 @@
 ﻿{
   "dependencies": {
-    "FontBuddy": "1.0.30",
-    "GameTimer": "1.0.8",
-    "InputHelper": "1.0.23",
-    "Microsoft.NETCore.UniversalWindowsPlatform": "6.1.7",
-    "MonoGame.Framework.WindowsUniversal": "3.5.1.1679",
-    "PrimitiveBuddy": "1.0.4",
-    "TouchScreenBuddy": "1.0.9"
+    "FontBuddy": "2.0.0",
+    "GameTimer": "2.0.0",
+    "InputHelper": "2.0.0",
+    "Microsoft.NETCore.UniversalWindowsPlatform": "6.1.9",
+    "MonoGame.Framework.WindowsUniversal": "3.7.1.189",
+    "PrimitiveBuddy": "2.0.0",
+    "TouchScreenBuddy": "2.0.0"
   },
   "frameworks": {
     "uap10.0.10240": {}
