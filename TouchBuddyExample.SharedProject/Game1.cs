@@ -4,6 +4,8 @@ using InputHelper;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Input.Touch;
+using System.Linq;
 using TouchScreenBuddy;
 
 namespace TouchBuddyExample
@@ -40,7 +42,9 @@ namespace TouchBuddyExample
 		/// </summary>
 		protected override void Initialize()
 		{
-			_input = new TouchComponent(this, null);
+			var touch = new TouchComponent(this, null);
+			touch.SupportedGestures = GestureType.Tap | GestureType.Pinch | GestureType.PinchComplete | GestureType.DoubleTap | GestureType.Flick;
+			_input = touch;
 
 			var debug = new InputHelper.DebugInputComponent(this, null);
 
@@ -100,6 +104,16 @@ namespace TouchBuddyExample
 
 			_font.Write(string.Format("Drops: {0}", _input.Drops.Count), pos, Justify.Left, 1f, Color.White, _spriteBatch, _time);
 			pos.Y += _font.Font.LineSpacing;
+
+			if (_input.Pinches.Count > 0)
+			{
+				var pinch = _input.Pinches.First();
+				_font.Write(string.Format("Pinch: {0}", pinch.Delta.ToString()), pos, Justify.Left, 1f, Color.White, _spriteBatch, _time);
+				pos.Y += _font.Font.LineSpacing;
+
+				_font.Write(pinch.Delta < 0f ? "Zoom out" : "Zoom in", pos, Justify.Left, 1f, Color.White, _spriteBatch, _time);
+				pos.Y += _font.Font.LineSpacing;
+			}
 
 			_spriteBatch.End();
 

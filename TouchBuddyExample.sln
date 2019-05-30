@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TouchBuddyExample.SharedProject", "TouchBuddyExample.SharedProject\TouchBuddyExample.SharedProject.shproj", "{9A5A7063-CD7E-40D4-BB31-1F3DAE4384A2}"
 EndProject
@@ -14,9 +14,9 @@ EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		TouchBuddyExample.SharedProject\TouchBuddyExample.SharedProject.projitems*{8894fefd-f390-4fad-ab64-af4c4d24582c}*SharedItemsImports = 4
-		TouchBuddyExample.SharedProject\TouchBuddyExample.SharedProject.projitems*{b59b736d-402a-4023-b504-1b935c0992f9}*SharedItemsImports = 4
 		TouchBuddyExample.SharedProject\TouchBuddyExample.SharedProject.projitems*{8fbed562-b61f-463e-b72a-7d13b73358d4}*SharedItemsImports = 4
 		TouchBuddyExample.SharedProject\TouchBuddyExample.SharedProject.projitems*{9a5a7063-cd7e-40d4-bb31-1f3dae4384a2}*SharedItemsImports = 13
+		TouchBuddyExample.SharedProject\TouchBuddyExample.SharedProject.projitems*{b59b736d-402a-4023-b504-1b935c0992f9}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
@@ -212,5 +212,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEB6E599-37CF-424F-B13D-C15597D1F7E4}
 	EndGlobalSection
 EndGlobal
