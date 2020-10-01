@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.Touch;
 using System.Linq;
+using System.Runtime.InteropServices;
 using TouchScreenBuddy;
 
 namespace TouchBuddyExample
@@ -23,6 +24,7 @@ namespace TouchBuddyExample
 		IFontBuddy _font;
 		IInputHelper _input;
 		GameClock _time;
+		float lineSpace;
 
 		#endregion //Properties
 
@@ -46,7 +48,7 @@ namespace TouchBuddyExample
 			touch.SupportedGestures = GestureType.Tap | GestureType.Pinch | GestureType.PinchComplete | GestureType.DoubleTap | GestureType.Flick;
 			_input = touch;
 
-			var debug = new InputHelper.DebugInputComponent(this, null);
+			var debug = new DebugInputComponent(this, null);
 
 			base.Initialize();
 		}
@@ -59,6 +61,7 @@ namespace TouchBuddyExample
 
 			_font = new FontBuddy();
 			_font.LoadContent(Content, "ArialBlack24");
+			lineSpace = _font.MeasureString("Yy").Y;
 
 			_time = new GameClock();
 			_time.Start();
@@ -94,25 +97,25 @@ namespace TouchBuddyExample
 			//write the stuff
 			var pos = Vector2.Zero;
 			_font.Write(string.Format("Highlights: {0}", _input.Highlights.Count), pos, Justify.Left, 1f, Color.White, _spriteBatch, _time);
-			pos.Y += _font.Font.LineSpacing;
+			pos.Y += lineSpace;
 
 			_font.Write(string.Format("Clicks: {0}", _input.Clicks.Count), pos, Justify.Left, 1f, Color.White, _spriteBatch, _time);
-			pos.Y += _font.Font.LineSpacing;
+			pos.Y += lineSpace;
 
 			_font.Write(string.Format("Drags: {0}", _input.Drags.Count), pos, Justify.Left, 1f, Color.White, _spriteBatch, _time);
-			pos.Y += _font.Font.LineSpacing;
+			pos.Y += lineSpace;
 
 			_font.Write(string.Format("Drops: {0}", _input.Drops.Count), pos, Justify.Left, 1f, Color.White, _spriteBatch, _time);
-			pos.Y += _font.Font.LineSpacing;
+			pos.Y += lineSpace;
 
 			if (_input.Pinches.Count > 0)
 			{
 				var pinch = _input.Pinches.First();
 				_font.Write(string.Format("Pinch: {0}", pinch.Delta.ToString()), pos, Justify.Left, 1f, Color.White, _spriteBatch, _time);
-				pos.Y += _font.Font.LineSpacing;
+				pos.Y += lineSpace;
 
 				_font.Write(pinch.Delta < 0f ? "Zoom out" : "Zoom in", pos, Justify.Left, 1f, Color.White, _spriteBatch, _time);
-				pos.Y += _font.Font.LineSpacing;
+				pos.Y += lineSpace;
 			}
 
 			_spriteBatch.End();
