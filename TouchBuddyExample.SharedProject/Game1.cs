@@ -6,7 +6,6 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.Touch;
 using System.Linq;
-using System.Runtime.InteropServices;
 using TouchScreenBuddy;
 
 namespace TouchBuddyExample
