@@ -89,31 +89,31 @@ namespace TouchBuddyExample
 		/// <param name="gameTime">Provides a snapshot of timing values.</param>
 		protected override void Draw(GameTime gameTime)
 		{
-			GraphicsDevice.Clear(Color.CornflowerBlue);
+			GraphicsDevice.Clear(Color.White);
 
 			_spriteBatch.Begin();
 
 			//write the stuff
 			var pos = Vector2.Zero;
-			_font.Write(string.Format("Highlights: {0}", _input.Highlights.Count), pos, Justify.Left, 1f, Color.White, _spriteBatch, _time);
+			_font.Write(string.Format("Highlights: {0}", _input.Highlights.Count), pos, Justify.Left, 1f, Color.Black, _spriteBatch, _time);
 			pos.Y += lineSpace;
 
-			_font.Write(string.Format("Clicks: {0}", _input.Clicks.Count), pos, Justify.Left, 1f, Color.White, _spriteBatch, _time);
+			_font.Write(string.Format("Clicks: {0}", _input.Clicks.Count), pos, Justify.Left, 1f, Color.Black, _spriteBatch, _time);
 			pos.Y += lineSpace;
 
-			_font.Write(string.Format("Drags: {0}", _input.Drags.Count), pos, Justify.Left, 1f, Color.White, _spriteBatch, _time);
+			_font.Write(string.Format("Drags: {0}", _input.Drags.Count), pos, Justify.Left, 1f, Color.Black, _spriteBatch, _time);
 			pos.Y += lineSpace;
 
-			_font.Write(string.Format("Drops: {0}", _input.Drops.Count), pos, Justify.Left, 1f, Color.White, _spriteBatch, _time);
+			_font.Write(string.Format("Drops: {0}", _input.Drops.Count), pos, Justify.Left, 1f, Color.Black, _spriteBatch, _time);
 			pos.Y += lineSpace;
 
 			if (_input.Pinches.Count > 0)
 			{
 				var pinch = _input.Pinches.First();
-				_font.Write(string.Format("Pinch: {0}", pinch.Delta.ToString()), pos, Justify.Left, 1f, Color.White, _spriteBatch, _time);
+				_font.Write(string.Format("Pinch: {0}", pinch.Delta.ToString()), pos, Justify.Left, 1f, Color.Black, _spriteBatch, _time);
 				pos.Y += lineSpace;
 
-				_font.Write(pinch.Delta < 0f ? "Zoom out" : "Zoom in", pos, Justify.Left, 1f, Color.White, _spriteBatch, _time);
+				_font.Write(pinch.Delta < 0f ? "Zoom out" : "Zoom in", pos, Justify.Left, 1f, Color.Black, _spriteBatch, _time);
 				pos.Y += lineSpace;
 			}
 
