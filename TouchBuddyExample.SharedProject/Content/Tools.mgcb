@@ -3,7 +3,7 @@
 
 /outputDir:bin
 /intermediateDir:obj
-/platform:Windows
+/platform:iOS
 /config:
 /profile:Reach
 /compress:False
@@ -16,12 +16,14 @@
 #begin ArialBlack10.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
 /processorParam:TextureFormat=Compressed
 /build:ArialBlack10.spritefont
 
 #begin ArialBlack24.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
 /processorParam:TextureFormat=Compressed
 /build:ArialBlack24.spritefont
 

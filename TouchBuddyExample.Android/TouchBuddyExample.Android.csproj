@@ -118,7 +118,7 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <Import Project="..\TouchBuddyExample.SharedProject\TouchBuddyExample.SharedProject.projitems" Label="Shared" />
-  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
   <Import Project="..\packages\MonoGame.Framework.Android.3.7.1.189\build\MonoGame.Framework.Android.targets" Condition="Exists('..\packages\MonoGame.Framework.Android.3.7.1.189\build\MonoGame.Framework.Android.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
